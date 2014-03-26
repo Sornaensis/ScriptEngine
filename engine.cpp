@@ -35,43 +35,6 @@ class scStream
         return program_;
     }
 
-    void printProgramVector()
-    {
-        vector<Token>::iterator it = program_.begin();
-        while(it != program_.end())
-        {
-            string type, val = (*it).data_;
-            switch ((*it).type_)
-            {
-                case TOKEN_SEPARATOR:
-                    type = "SEPARATOR";
-                    break;
-                case TOKEN_IDENTIFIER:
-                    type = "IDENTIFIER";
-                    break;
-            }
-            
-            if((*it).type_ == TOKEN_SEPARATOR)
-            {
-                switch ((*it).data_[0])
-                {
-                    case ' ':
-                        val = "SPACE";
-                        break;
-                    case '\n':
-                        val = "NEWLINE";
-                        break;
-                    default:
-                        break;
-                }
-            }
-
-            cerr << type << " => " << val << endl;
-
-            ++it;
-        }
-    }
-
     void makeFromFile(string s)
     {
         ifstream example(s);
