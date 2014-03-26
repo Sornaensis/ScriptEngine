@@ -1,0 +1,6 @@
+import IO
+import Game
+
+main = print "\"Done.\"\n" "Lmfao"
+
+somefunction input = input*2
