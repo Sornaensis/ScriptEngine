@@ -3,4 +3,10 @@ import Game
 
 main = print "\"Done.\"\n" "Lmfao"
 
+aThing = ]" unmatched "
+
+myList = [[1,3,4]
+
+someList = [[game,thang, whatever]
+
 somefunction input = input*2
