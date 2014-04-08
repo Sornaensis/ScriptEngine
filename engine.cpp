@@ -145,6 +145,7 @@ class scStateMachine
             }
         }
 
+        // Match braces
         int square_count = 0, curly_count = 0;
         vector<Token>::iterator last_bracket = stream_vec.begin();
         for(it = stream_vec.begin();it != stream_vec.end();++it)
@@ -180,7 +181,7 @@ class scStateMachine
             return;
         }
 
-        cerr << "Square: " << square_count << " Curly: " << curly_count << endl;
+
 
         // Send info about current stream object to standard error
         for(it = stream_vec.begin();it != stream_vec.end();++it)
